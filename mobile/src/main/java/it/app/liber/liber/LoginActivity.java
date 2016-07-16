@@ -16,7 +16,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void login(View view) {
         Intent intent = new Intent(this, HomeActivity.class);
-        EditText editText = (EditText) findViewById(R.id.edit_message);
+        EditText editText = (EditText) findViewById(R.id.activity_home);
     }
 
 }
