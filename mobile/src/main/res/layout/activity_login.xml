@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LoginActivity"
+    android:background="#11111">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/userField"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Inserisci la tua mail"
+        android:textColor="#7a0f9b" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/passwordField"
+        android:textAlignment="center"
+        android:layout_below="@+id/userField"
+        android:layout_alignStart="@+id/userField"
+        android:layout_marginTop="66dp"
+        android:text="Inserisci la tua password"
+        android:textColor="#7a0f9b" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inizia"
+        android:id="@+id/startButton"
+        android:layout_below="@+id/passwordField"
+        android:layout_marginTop="64dp"
+        android:textColor="#ffffffff"
+        android:textSize="30sp"
+        android:background="@drawable/button1"
+        android:shadowColor="#ff7a0f9b"
+        android:shadowDx="0dp"
+        android:shadowDy="0dp"
+        android:shadowRadius="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="login" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@mipmap/logoLiber"
+        android:layout_above="@+id/userField"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inizia"
+        android:id="@+id/button"
+        android:textColor="#ffffffff"
+        android:textSize="30sp"
+        android:background="@drawable/button1"
+        android:shadowColor="#ff7a0f9b"
+        android:shadowDx="0dp"
+        android:shadowDy="0dp"
+        android:shadowRadius="5dp"
+        android:onClick="login"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/startButton"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
